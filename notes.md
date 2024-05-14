@@ -2,7 +2,7 @@
 
 ## Installation Guide
 
-- Install python3.12 maybe try something like [this](https://ubuntuhandbook.org/index.php/2023/05/install-python-3-12-ubuntu/)(no guarantees, worked for me with option2 by installing the source)
+- Install python3.12.2 maybe try something like [this](https://ubuntuhandbook.org/index.php/2023/05/install-python-3-12-ubuntu/)(no guarantees, worked for me with option2 by installing the source)
 - install required packages with `pip install -r requirements.txt`
 - to get mediapy working you also need to run `sudo apt install ffmpeg`
 
@@ -15,6 +15,10 @@
 ## Coding with mujoco notes
 
 - don't have two renderers, it will not work
+
+## Model file things
+
+- Converting URDF to MJCF: [https://mujoco.readthedocs.io/en/stable/modeling.html#CURDF]
 
 ## Other issues with linux and GPU
 
