@@ -1,0 +1,165 @@
+<mujoco model="stretch">
+  <compiler angle="radian" meshdir="./meshes/"/>
+  <asset>
+    <mesh name="base_link" file="base_link.STL"/>
+    <mesh name="base_link_collision" file="base_link_collision.STL"/>
+    <mesh name="link_ground_collision" file="link_ground_collision.STL"/>
+    <mesh name="link_right_wheel" file="link_right_wheel.STL"/>
+    <mesh name="link_right_wheel_collision" file="link_right_wheel_collision.STL"/>
+    <mesh name="link_left_wheel" file="link_left_wheel.STL"/>
+    <mesh name="link_left_wheel_collision" file="link_left_wheel_collision.STL"/>
+    <mesh name="omni_wheel_m" file="omni_wheel_m.STL"/>
+    <mesh name="link_mast" file="link_mast.STL"/>
+    <mesh name="link_mast_collision" file="link_mast_collision.STL"/>
+    <mesh name="link_lift" file="link_lift.STL"/>
+    <mesh name="link_lift_collision" file="link_lift_collision.STL"/>
+    <mesh name="link_arm_l4" file="link_arm_l4.STL"/>
+    <mesh name="link_arm_l4_collision" file="link_arm_l4_collision.STL"/>
+    <mesh name="link_arm_l3" file="link_arm_l3.STL"/>
+    <mesh name="link_arm_l3_collision" file="link_arm_l3_collision.STL"/>
+    <mesh name="link_arm_l2" file="link_arm_l2.STL"/>
+    <mesh name="link_arm_l2_collision" file="link_arm_l2_collision.STL"/>
+    <mesh name="link_arm_l1" file="link_arm_l1.STL"/>
+    <mesh name="link_arm_l1_collision" file="link_arm_l1_collision.STL"/>
+    <mesh name="link_arm_l0" file="link_arm_l0.STL"/>
+    <mesh name="link_arm_l0_collision" file="link_arm_l0_collision.STL"/>
+    <mesh name="link_wrist_yaw" file="link_wrist_yaw.STL"/>
+    <mesh name="link_wrist_yaw_collision" file="link_wrist_yaw_collision.STL"/>
+    <mesh name="link_head" file="link_head.STL"/>
+    <mesh name="link_head_collision" file="link_head_collision.STL"/>
+    <mesh name="link_head_pan" file="link_head_pan.STL"/>
+    <mesh name="link_head_pan_collision" file="link_head_pan_collision.STL"/>
+    <mesh name="link_head_tilt" file="link_head_tilt.STL"/>
+    <mesh name="link_head_tilt_collision" file="link_head_tilt_collision.STL"/>
+    <mesh name="link_aruco_right_base" file="link_aruco_right_base.STL"/>
+    <mesh name="link_aruco_left_base" file="link_aruco_left_base.STL"/>
+    <mesh name="link_aruco_shoulder" file="link_aruco_shoulder.STL"/>
+    <mesh name="link_aruco_top_wrist" file="link_aruco_top_wrist.STL"/>
+    <mesh name="link_aruco_inner_wrist" file="link_aruco_inner_wrist.STL"/>
+    <mesh name="d435" file="d435.stl"/>
+    <mesh name="laser" file="laser.STL"/>
+    <mesh name="laser_collision" file="laser_collision.STL"/>
+    <mesh name="base_imu" file="base_imu.STL"/>
+    <mesh name="respeaker_base" file="respeaker_base.STL"/>
+    <mesh name="link_DW3_wrist_yaw_bottom" file="link_DW3_wrist_yaw_bottom.STL"/>
+    <mesh name="link_DW3_wrist_yaw_bottom_collision" file="link_DW3_wrist_yaw_bottom_collision.STL"/>
+    <mesh name="link_DW3_wrist_pitch" file="link_DW3_wrist_pitch.STL"/>
+    <mesh name="link_DW3_wrist_pitch_collision" file="link_DW3_wrist_pitch_collision.STL"/>
+    <mesh name="link_DW3_wrist_roll" file="link_DW3_wrist_roll.STL"/>
+    <mesh name="link_DW3_wrist_roll_collision" file="link_DW3_wrist_roll_collision.STL"/>
+    <mesh name="link_DW3_tablet_12in" file="link_DW3_tablet_12in.STL"/>
+    <mesh name="link_DW3_tablet_12in_collision" file="link_DW3_tablet_12in_collision.STL"/>
+    <mesh name="link_SE3_head_nav_cam" file="link_SE3_head_nav_cam.STL"/>
+    <mesh name="link_SE3_head_nav_cam_collision" file="link_SE3_head_nav_cam_collision.STL"/>
+  </asset>
+  <worldbody>
+    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.79216 0.81961 0.93333 1" mesh="base_link"/>
+    <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="base_link_collision"/>
+    <geom pos="-0.1 -0.3185 0" quat="0.707105 0 0 -0.707108" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_ground_collision"/>
+    <geom pos="-0.1 -0.3185 0" quat="0.707105 0 0 -0.707108" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_ground_collision"/>
+    <geom size="0.032" pos="-0.245 0 0.032" quat="0.707107 -0.707107 0 0"/>
+    <geom pos="-0.245 0 0.032" quat="0.707107 -0.707107 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="omni_wheel_m"/>
+    <geom pos="-0.067 0.135 0.0284" quat="0.707105 0.707108 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.79216 0.81961 0.93333 1" mesh="link_mast"/>
+    <geom pos="-0.067 0.135 0.0284" quat="0.707105 0.707108 0 0" type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="link_mast_collision"/>
+    <geom pos="-0.067 0.134995 1.3584" quat="-0.707107 -3.89602e-06 1.29867e-06 0.707107" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_head"/>
+    <geom pos="-0.067 0.134995 1.3584" quat="-0.707107 -3.89602e-06 1.29867e-06 0.707107" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_head_collision"/>
+    <geom pos="-0.067 0.131964 1.40076" quat="0.939693 1.72584e-06 6.28155e-07 -0.34202" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.79216 0.81961 0.93333 1" mesh="respeaker_base"/>
+    <geom pos="-0.067 0.131964 1.40076" quat="0.939693 1.72584e-06 6.28155e-07 -0.34202" type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="respeaker_base"/>
+    <geom pos="-0.0015028 -0.130497 0.159748" quat="0.707107 0 0 -0.707107" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_aruco_right_base"/>
+    <geom pos="-0.0015028 -0.130497 0.159748" quat="0.707107 0 0 -0.707107" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_aruco_right_base"/>
+    <geom pos="-0.005 0.130497 0.159748" quat="0.707107 0 0 -0.707107" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_aruco_left_base"/>
+    <geom pos="-0.005 0.130497 0.159748" quat="0.707107 0 0 -0.707107" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_aruco_left_base"/>
+    <geom pos="0.004 0 0.1664" quat="-3.67321e-06 0 0 1" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.25098 0.25098 0.25098 1" mesh="laser"/>
+    <geom pos="0.004 0 0.1664" quat="-3.67321e-06 0 0 1" type="mesh" rgba="0.25098 0.25098 0.25098 1" mesh="laser_collision"/>
+    <geom pos="-0.12838 0.0031592 0.1474" quat="-2.59734e-06 -0.707105 0.707108 2.59735e-06" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0 0.772549 0.207843 1" mesh="base_imu"/>
+    <geom pos="-0.12838 0.0031592 0.1474" quat="-2.59734e-06 -0.707105 0.707108 2.59735e-06" type="mesh" rgba="0 0.772549 0.207843 1" mesh="base_imu"/>
+    <body name="link_right_wheel" pos="0 -0.17035 0.0508" quat="0.707105 -0.707108 0 0">
+      <inertial pos="0 0 0.02765" mass="0.20773" diaginertia="5.4e-05 5.4e-05 5.1e-05"/>
+      <joint name="joint_right_wheel" pos="0 0 0" axis="0 0 1" damping="21.75" frictionloss="10.48"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.79216 0.81961 0.93333 1" mesh="link_right_wheel"/>
+      <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="link_right_wheel_collision"/>
+    </body>
+    <body name="link_left_wheel" pos="0 0.17035 0.0508" quat="0.707105 -0.707108 0 0">
+      <inertial pos="0 0 -0.02765" mass="0.20773" diaginertia="5.4e-05 5.4e-05 5.1e-05"/>
+      <joint name="joint_left_wheel" pos="0 0 0" axis="0 0 1" damping="21.75" frictionloss="10.48"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.79216 0.81961 0.93333 1" mesh="link_left_wheel"/>
+      <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="link_left_wheel_collision"/>
+    </body>
+    <body name="link_lift" pos="-0.104385 0.134999 0.195" quat="0.707105 0 -2.59735e-06 0.707108">
+      <inertial pos="-0.0319337 0.0307533 0.0199629" quat="-0.173437 0.658102 0.260234 0.684908" mass="2.22279" diaginertia="0.0124003 0.0102349 0.00537464"/>
+      <joint name="joint_lift" pos="0 0 0" axis="0 0 1" type="slide" range="0 1.1" actuatorfrcrange="-100 100"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.79216 0.81961 0.93333 1" mesh="link_lift"/>
+      <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="link_lift_collision"/>
+      <geom pos="-0.2547 0 0" quat="0.499998 0.5 -0.500002 -0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.79216 0.81961 0.93333 1" mesh="link_arm_l4"/>
+      <geom pos="-0.2547 0 0" quat="0.499998 0.5 -0.500002 -0.5" type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="link_arm_l4_collision"/>
+      <geom pos="-0.0133769 0.0558541 0.0861368" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_aruco_shoulder"/>
+      <geom pos="-0.0133769 0.0558541 0.0861368" quat="1 0 0 0" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_aruco_shoulder"/>
+      <body name="link_arm_l3" pos="-0.2677 4.77517e-08 -4.77517e-08" quat="0.499998 0.5 -0.500002 -0.5">
+        <inertial pos="-1e-06 -0.000146 -0.11908" quat="0.707107 -0.000352144 0.000352144 0.707107" mass="0.146817" diaginertia="0.001081 0.001081 7.6999e-05"/>
+        <joint name="joint_arm_l3" pos="0 0 0" axis="0 0 1" type="slide" range="0 0.13" actuatorfrcrange="-100 100"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_arm_l3"/>
+        <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_arm_l3_collision"/>
+        <body name="link_arm_l2" pos="0 0 0.013">
+          <inertial pos="0 -7.1e-05 -0.115635" mass="0.130565" diaginertia="0.000943 0.000943 5.7e-05"/>
+          <joint name="joint_arm_l2" pos="0 0 0" axis="0 0 1" type="slide" range="0 0.13" actuatorfrcrange="-100 100"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_arm_l2"/>
+          <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_arm_l2_collision"/>
+          <body name="link_arm_l1" pos="0 0 0.013">
+            <inertial pos="-1e-06 -0.000121 -0.113457" mass="0.113658" diaginertia="0.0008 0.0008 4e-05"/>
+            <joint name="joint_arm_l1" pos="0 0 0" axis="0 0 1" type="slide" range="0 0.13" actuatorfrcrange="-100 100"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.79216 0.81961 0.93333 1" mesh="link_arm_l1"/>
+            <geom type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="link_arm_l1_collision"/>
+            <body name="link_arm_l0" pos="0 0 -0.01375" quat="1 0 0 0">
+              <inertial pos="0.033681 -0.000847 -0.031723" quat="0.651603 -0.132908 -0.117203 0.737572" mass="0.427734" diaginertia="0.00211074 0.00186502 0.000391237"/>
+              <joint name="joint_arm_l0" pos="0 0 0" axis="0 0 1" type="slide" range="0 0.13" actuatorfrcrange="-100 100"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_arm_l0"/>
+              <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_arm_l0_collision"/>
+              <geom pos="0.04725 0.029285 0" quat="0 0 0.707107 0.707107" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_aruco_top_wrist"/>
+              <geom pos="0.04725 0.029285 0" quat="0 0 0.707107 0.707107" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_aruco_top_wrist"/>
+              <geom pos="0.04725 -0.0119 -0.02725" quat="0 0 1 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_aruco_inner_wrist"/>
+              <geom pos="0.04725 -0.0119 -0.02725" quat="0 0 1 0" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_aruco_inner_wrist"/>
+              <body name="link_wrist_yaw" pos="0.083 -0.03075 0" quat="0 0 -0.707107 0.707107">
+                <inertial pos="0.0324249 0.0120053 0.0159088" quat="-0.0785379 0.39862 0.139116 0.903095" mass="0.198971" diaginertia="0.000256572 0.000225967 8.4626e-05"/>
+                <joint name="joint_wrist_yaw" pos="0 0 0" axis="0 0 -1" range="-1.75 4" actuatorfrcrange="-100 100"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.898039 0.917647 0.929412 1" mesh="link_wrist_yaw"/>
+                <geom type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="link_wrist_yaw_collision"/>
+                <geom quat="0 -0.707107 0.707107 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_DW3_wrist_yaw_bottom"/>
+                <geom quat="0 -0.707107 0.707107 0" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_DW3_wrist_yaw_bottom_collision"/>
+                <body name="link_wrist_pitch" pos="0.019455 0 0.0305" quat="-0.500003 0.500001 0.499997 -0.499999">
+                  <inertial pos="-0.00071148 -0.0147443 0.0195141" quat="0.515653 0.478815 -0.501674 0.503152" mass="0.116591" diaginertia="6.36768e-05 5.76475e-05 3.5776e-05"/>
+                  <joint name="joint_wrist_pitch" pos="0 0 0" axis="0 0 -1" range="-1.57 0.56" actuatorfrcrange="-100 100"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="1 1 1 1" mesh="link_DW3_wrist_pitch"/>
+                  <geom type="mesh" rgba="1 1 1 1" mesh="link_DW3_wrist_pitch_collision"/>
+                  <body name="link_wrist_roll" pos="-0.018859 -0.024 0.01955" quat="-2.59734e-06 0.707105 -2.59735e-06 -0.707108">
+                    <inertial pos="-0.000130505 -0.00120621 0.0319193" quat="0.000195159 0.70713 0.000208503 0.707084" mass="0.333202" diaginertia="0.00242252 0.00159669 0.000835731"/>
+                    <joint name="joint_wrist_roll" pos="0 0 0" axis="0 0 1" range="-3.14 3.14" actuatorfrcrange="-100 100"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.898039 0.917647 0.929412 1" mesh="link_DW3_wrist_roll"/>
+                    <geom type="mesh" rgba="0.898039 0.917647 0.929412 1" mesh="link_DW3_wrist_roll_collision"/>
+                    <geom pos="0.1282 -0.057512 0.046711" quat="0.707105 -0.707108 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.79216 0.81961 0.93333 1" mesh="link_DW3_tablet_12in"/>
+                    <geom pos="0.1282 -0.057512 0.046711" quat="0.707105 -0.707108 0 0" type="mesh" rgba="0.79216 0.81961 0.93333 1" mesh="link_DW3_tablet_12in_collision"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="link_head_pan" pos="0.00610002 -4.87362e-06 1.3552" quat="-1 -1.8366e-06 3.67321e-06 6.74255e-12">
+      <inertial pos="-0.000422 0.013934 -0.0161" quat="0.485411 -0.16005 0.262062 0.818586" mass="0.062462" diaginertia="4.35701e-05 4.0243e-05 1.11869e-05"/>
+      <joint name="joint_head_pan" pos="0 0 0" axis="0 0 1" range="-3.9 1.5" actuatorfrcrange="-100 100"/>
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_head_pan"/>
+      <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_head_pan_collision"/>
+      <body name="link_head_tilt" pos="-0.0013 0.0277625 -0.0533108" quat="0.707107 0.707107 0 0">
+        <inertial pos="0.012435 -0.0199108 0.0262329" quat="0.659664 0.662134 -0.258093 0.244561" mass="0.383894" diaginertia="0.00436506 0.00432125 0.000806024"/>
+        <joint name="joint_head_tilt" pos="0 0 0" axis="0 0 1" range="-1.53 0.79" actuatorfrcrange="-100 100"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_head_tilt"/>
+        <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_head_tilt_collision"/>
+        <geom pos="0.0449 -0.0122 0.0307" quat="0.5 0.5 0.5 0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="d435"/>
+        <geom size="0.012525 0.045 0.0125" pos="0.0406 -0.0122 0.0307" type="box"/>
+        <geom pos="0.0402 -0.041173 -0.0245786" quat="0.707107 0 0.707107 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.792157 0.819608 0.933333 1" mesh="link_SE3_head_nav_cam"/>
+        <geom pos="0.0402 -0.041173 -0.0245786" quat="0.707107 0 0.707107 0" type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="link_SE3_head_nav_cam_collision"/>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

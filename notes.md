@@ -29,6 +29,11 @@
 - install the recommended driver with `sudo apt install nvidia-driver-XXX`
 - continue with the booting sequence
 
+## Compiling urdf to mujoco format
+
+- go into the C installation directory of mujoco
+- run something like `./compile /path/to/urdf/file.urdf /path/to/output/file.xml`
+
 ## Installing ros2
 
 - [https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html]
