@@ -19,6 +19,7 @@
 ## Model file things
 
 - Converting URDF to MJCF: [https://mujoco.readthedocs.io/en/stable/modeling.html#CURDF]
+- URDF location `mujo_venv/lib/python3.12/site-packages/stretch_urdf/SE3/stretch_description_SE3_eoa_wrist_dw3_tool_sg3.urdf`
 
 ## Other issues with linux and GPU
 
