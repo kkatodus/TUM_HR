@@ -28,3 +28,12 @@
 - if not, check the recommended driver with `sudo apt list --installed | grep nvidia-driver`
 - install the recommended driver with `sudo apt install nvidia-driver-XXX`
 - continue with the booting sequence
+
+## Installing ros2
+
+- [https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html]
+
+## Xacro to URDF
+
+- `sudo apt install ros-foxy-xacro`
+- `xacro --inorder stretch_wrist_dw3.xacro > your_model.urdf`
