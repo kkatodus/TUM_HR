@@ -4,9 +4,7 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot>
-  <mujoco>
-    <compiler meshdir="./meshes/" balanceinertia="true" discardvisual="false"/>
-  </mujoco>
+	<mujoco> <compiler discardvisual="false" fusestatic="false" balanceinertia="true"/> </mujoco>
   <link name="base_link">
     <inertial>
       <origin rpy="0 0 0" xyz="-0.087526 -0.001626 0.081009"/>
