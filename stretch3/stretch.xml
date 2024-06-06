@@ -34,8 +34,16 @@
         </default>
       </default>
       <default class="wrist">
-        <joint axis="0 0 -1" range="-1.75 4" damping=".1"/>
-        <general gainprm="1" biasprm="0 -1 0" ctrlrange="-1.75 4" forcerange="-5 5"/>
+        <joint axis="0 0 -1" range="-1.39 4.42" damping=".1"/>
+        <general gainprm="1" biasprm="0 -1 0" ctrlrange="-1.39 4.42" forcerange="-5 5"/>
+      </default>
+      <default class="wrist_pitch">
+        <joint axis="0 0 -1" range="-0.57 1.57" damping=".1"/>
+        <general gainprm="1" biasprm="0 -1 0" ctrlrange="-0.57 1.57" forcerange="-5 5"/>
+      </default>
+      <default class="wrist_roll">
+        <joint axis="0 0 -1" range="-3.14 3.14" damping=".1"/>
+        <general gainprm="1" biasprm="0 -1 0" ctrlrange="-3.14 3.14" forcerange="-5 5"/>
       </default>
       <default class="finger_open">
         <joint axis="0 0 1" range="-0.6 0.6" damping=".1"/>
@@ -292,9 +300,9 @@
                     <geom mesh="link_aruco_inner_wrist" class="collision"/>
                   </body>
                   <body name="link_wrist_yaw" pos="0.083 -0.03075 0" gravcomp="1">
-                    <joint name="joint_wrist_yaw" class="wrist" type="hinge" axis="0 1 0" range='-2 2'/>
-					<joint name="joint_wrist_pitch" class="wrist" type="hinge" axis="1 0 0" range='-2 2'/>
-					<joint name="joint_wrist_roll" class="wrist" type="hinge" axis="0 0 1" range='-2 2'/>
+                    <joint name="joint_wrist_yaw" class="wrist" type="hinge" axis="0 1 0" range='-1.39 4.42'/>
+					<joint name="joint_wrist_pitch" class="wrist_pitch" type="hinge" axis="1 0 0" range='-0.57 1.57'/>
+					<joint name="joint_wrist_roll" class="wrist_roll" type="hinge" axis="0 0 1" range='-3.14 3.14'/>
                     <geom material="Generic_Black" mesh="link_wrist_yaw" class="visual"/>
                     <geom mesh="link_wrist_yaw" class="collision"/>
                     <geom quat="0 1 -1 0" mesh="link_gripper_0" material="Generic_Black" class="visual"/>
@@ -425,8 +433,8 @@
     <general name="lift" joint="joint_lift" class="lift"/>
     <general name="arm_extend" tendon="extend" class="telescope"/>
     <general name="wrist_yaw" joint="joint_wrist_yaw" class="wrist"/>
-	<general name="wrist_pitch" joint="joint_wrist_pitch" class="wrist"/>
-	<general name="wrist_roll" joint="joint_wrist_roll" class="wrist"/>
+	<general name="wrist_pitch" joint="joint_wrist_pitch" class="wrist_pitch"/>
+	<general name="wrist_roll" joint="joint_wrist_roll" class="wrist_roll"/>
     <general name="grip" joint="joint_gripper_slide" class="finger_slide"/>
     <position name="head_pan" joint="joint_head_pan" class="head_pan"/>
     <position name="head_tilt" joint="joint_head_tilt" class="head_tilt"/>
