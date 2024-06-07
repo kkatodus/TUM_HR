@@ -32,7 +32,7 @@ class Controller:
 			'head_tilt':[-1.53,0.79]
 		}
 
-	def get_control(self, model_data, running_time:float=0.0)->list[float]:
+	def get_control(self, model_data, camera_data:dict, running_time:float=0.0)->list[float]:
 		if running_time < 0:
 			raise ValueError("Running time cannot be negative")
 		if running_time > 5:
